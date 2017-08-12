@@ -51,13 +51,11 @@ a {
   color: #666;
 }
 body {
-  margin: 0 auto;
-  min-width: 320px;
-  max-width: 640px;
   height: 100%;
   font-size: 14px;
   font-family: Helvetica, STHeiti STXihei, Microsoft JhengHei, Microsoft YaHei, Arial;
   line-height: 1.5;
+  background-color: #f9f9f9;
   color: #666;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -135,7 +133,6 @@ input[type="text"],textarea{
 
 html, body, .app, .container {
   width: 100%;
-  height: 100%;
 }
 
 </style>

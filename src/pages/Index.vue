@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <div class="index" :style="{ height: this.winSize.height + 'px' }">
     <Navigation type="white" />
     <div class="index_page index_page_access">
       <div class="index_page_mask"></div>
@@ -16,12 +16,14 @@
 </template>
 
 <script>
+import mixin from '@/mixins'
 import Navigation from '@/components/Navigation'
+
 export default {
   components: {
     Navigation
-  }
-
+  },
+  mixins: [mixin]
 }
 </script>
 

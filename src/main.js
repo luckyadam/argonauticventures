@@ -12,7 +12,8 @@ Vue.config.productionTip = false
 Vue.use(VueTap)
 Vue.use(vueg, router, {
   forwardAnim: 'fadeInRight',
-  backAnim: 'fadeInLeft'
+  backAnim: 'fadeInLeft',
+  shadow: false
 })
 
 /* eslint-disable no-new */
