@@ -3,8 +3,8 @@
     <p class="banner_tip">{{content.tip}}</p>
     <div class="banner_deco banner_deco_top"></div>
     <div class="banner_title">
-      <p class="banner_title_b" v-for="big in content.bigTitle">{{big}}</p>
-      <p class="banner_title_s" v-for="small in content.smallTitle">{{small}}</p>
+      <p class="banner_title_b" v-for="big in content.bigTitle" v-html="big"></p>
+      <p class="banner_title_s" v-for="small in content.smallTitle" v-html="small"></p>
     </div>
     <div class="banner_deco banner_deco_bottom"></div>
     <div class="banner_desc">{{content.desc}}</div>
@@ -61,6 +61,7 @@
       &_s {
         font-family: RegencieLight;
         line-height: 1;
+        margin-bottom: rem(30px);
       }
     }
     &_desc {

@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueLazyload from 'vue-lazyload'
 import VueTap from 'v-tap'
 import vueg from 'vueg'
 import 'vueg/css/transition-min.css'
@@ -15,6 +16,7 @@ Vue.use(vueg, router, {
   backAnim: 'fadeInLeft',
   shadow: false
 })
+Vue.use(VueLazyload)
 
 /* eslint-disable no-new */
 new Vue({
