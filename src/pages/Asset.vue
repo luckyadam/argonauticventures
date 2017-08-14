@@ -2,22 +2,29 @@
   <div class="asset" :style="{ height: this.winSize.height + 'px' }">
     <Navigation type="white" />
     <div class="asset_mask"></div>
-    <div class="asset_page asset_page_1">
-      <div class="asset_main">
-        <Banner :content="assetContent1" class="asset_content" />
-        <Explore />
-      </div>
-    </div>
-    <div class="asset_page asset_page_2">
-      <div class="asset_main">
-        <Banner :content="assetContent2" class="asset_content" />
-        <Explore />
-      </div>
-    </div>
+    <swiper class="asset_page_container" :options="swiperOption" :not-next-tick="notNextTick" ref="mySwiper">
+      <swiper-slide class="asset_page asset_page_1">
+        <div class="asset_main">
+          <Banner :content="assetContent1" class="asset_content" />
+          <Explore />
+        </div>
+      </swiper-slide>
+      <swiper-slide class="asset_page asset_page_2">
+        <div class="asset_main">
+          <Banner :content="assetContent2" class="asset_content" />
+          <Explore />
+        </div>
+      </swiper-slide>
+      <div class="swiper-pagination" slot="pagination"></div>
+    </swiper>
   </div>
 </template>
 
 <script>
+import 'swiper/dist/css/swiper.css'
+
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
+
 import mixin from '@/mixins'
 import Navigation from '@/components/Navigation'
 import Banner from '@/components/Banner'
@@ -27,13 +34,21 @@ export default {
   components: {
     Navigation,
     Banner,
-    Explore
+    Explore,
+
+    swiper,
+    swiperSlide
   },
 
   mixins: [mixin],
 
   data () {
     return {
+      notNextTick: true,
+      swiperOption: {
+        pagination: '.swiper-pagination',
+        direction: 'vertical'
+      },
       assetContent1: {
         bigTitle: ['venture capital'],
         smallTitle: ['ASSET  CLASS'],
@@ -44,6 +59,12 @@ export default {
         smallTitle: ['ASSET  CLASS'],
         desc: 'A Hedge Fund is an investment fund that invests in a variety of assets, often with complex portfolio-construction and risk-management techniques. Hedge funds are generally distinct from mutual funds as their use of leverage is not capped by regulators and distinct from private equity funds as the majority of hedge funds invest in relatively liquid assets.'
       }
+    }
+  },
+
+  computed: {
+    swiper () {
+      return this.$refs.mySwiper.swiper
     }
   }
 }
@@ -71,6 +92,10 @@ export default {
       position: relative;
       top: 0;
       left: 0;
+      &_container {
+        width:  100%;
+        height: 100%;
+      }
     }
     &_main {
       position: absolute;
@@ -88,6 +113,12 @@ export default {
         color: #8d8d8d;
         text-transform: none;
       }
+    }
+    .swiper-pagination-bullet {
+      background: #fff;
+    }
+    .swiper-pagination-bullet-active {
+      background: #007aff;
     }
   }
 </style>
