@@ -38,7 +38,7 @@
           },
           {
             name: 'core ethos',
-            lnk: 'core'
+            lnk: 'core-ethos'
           },
           {
             name: 'asset classes',
@@ -46,7 +46,7 @@
           },
           {
             name: 'co investor network',
-            lnk: 'co'
+            lnk: 'co-investor-network'
           },
           {
             name: 'portfolio companies',

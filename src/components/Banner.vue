@@ -7,7 +7,7 @@
       <p class="banner_title_s" v-for="small in content.smallTitle" v-html="small"></p>
     </div>
     <div class="banner_deco banner_deco_bottom"></div>
-    <div class="banner_desc">{{content.desc}}</div>
+    <div class="banner_desc" v-html="content.desc"></div>
   </div>
 </template>
 
@@ -56,7 +56,7 @@
       &_b {
         font-family: NexaRustSans-Black;
         line-height: 1;
-        margin-bottom: rem(34px);
+        margin-bottom: rem(30px);
       }
       &_s {
         font-family: RegencieLight;

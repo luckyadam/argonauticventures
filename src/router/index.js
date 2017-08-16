@@ -5,6 +5,8 @@ import Index from '@/pages/Index'
 const About = () => import('@/pages/About.vue')
 const Asset = () => import('@/pages/Asset.vue')
 const Co = () => import('@/pages/Co.vue')
+const Contact = () => import('@/pages/Contact.vue')
+const CoreEthos = () => import('@/pages/CoreEthos.vue')
 
 Vue.use(Router)
 
@@ -26,9 +28,19 @@ export default new Router({
       component: Asset
     },
     {
-      path: '/co',
+      path: '/co-investor-network',
       name: 'Co',
       component: Co
+    },
+    {
+      path: '/contact',
+      name: 'Contact',
+      component: Contact
+    },
+    {
+      path: '/core-ethos',
+      name: 'CoreEthos',
+      component: CoreEthos
     }
   ]
 })

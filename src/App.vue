@@ -19,15 +19,11 @@ export default {
 * {
   -webkit-tap-highlight-color: transparent;
   outline: 0;
-  margin:0;
-  padding:0;
-  vertical-align:baseline;
-}
-body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
   margin: 0;
   padding: 0;
   vertical-align: baseline;
 }
+
 img {
   border: 0 none;
   vertical-align: top;
@@ -129,6 +125,21 @@ input[type="text"],textarea{
 	src: url('./assets/fonts/NexaRustSans-Black.eot?#iefix') format('embedded-opentype'),
 		url('./assets/fonts/NexaRustSans-Black.woff') format('woff'),
 		url('./assets/fonts/NexaRustSans-Black.ttf') format('truetype');
+}
+
+[lazy=loaded] {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
 html, body, .app, .container {

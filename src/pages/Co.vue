@@ -575,21 +575,7 @@
         height: auto;
         display: inline-block;
         vertical-align: middle;
-        &[lazy=loaded] {
-          animation-duration: 1s;
-          animation-fill-mode: both;
-          animation-name: fadeIn;
-        }
       }
-    }
-  }
-
-  @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
     }
   }
 </style>
