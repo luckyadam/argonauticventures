@@ -7,6 +7,7 @@ const Asset = () => import('@/pages/Asset.vue')
 const Co = () => import('@/pages/Co.vue')
 const Contact = () => import('@/pages/Contact.vue')
 const CoreEthos = () => import('@/pages/CoreEthos.vue')
+const HfAsset = () => import('@/pages/HfAsset.vue')
 
 Vue.use(Router)
 
@@ -41,6 +42,11 @@ export default new Router({
       path: '/core-ethos',
       name: 'CoreEthos',
       component: CoreEthos
+    },
+    {
+      path: '/hf-asset-class',
+      name: 'HfAsset',
+      component: HfAsset
     }
   ]
 })

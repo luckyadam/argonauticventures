@@ -1,9 +1,17 @@
 <template>
-  <a class="explore">
+  <router-link :to="link" class="explore">
     <i class="explore_arrow"></i>
     <span class="explore_txt">EXPLOREIT</span>
-  </a>
+  </router-link>
 </template>
+
+<script>
+  export default {
+    props: {
+      link: String
+    }
+  }
+</script>
 
 <style lang="scss">
   @import '../assets/sass/_common';

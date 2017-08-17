@@ -95,6 +95,7 @@ export default {
       &_img {
         &_container {
           width: 100%;
+          margin-top: rem(36px);
         }
         width: 100%;
         height: auto;

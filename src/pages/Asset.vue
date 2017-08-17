@@ -6,13 +6,13 @@
       <swiper-slide class="asset_page asset_page_1">
         <div class="asset_main">
           <Banner :content="assetContent1" class="asset_content" />
-          <Explore />
+          <Explore link="/hf-asset-class" />
         </div>
       </swiper-slide>
       <swiper-slide class="asset_page asset_page_2">
         <div class="asset_main">
           <Banner :content="assetContent2" class="asset_content" />
-          <Explore />
+          <Explore link="/hf-asset-class" />
         </div>
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
