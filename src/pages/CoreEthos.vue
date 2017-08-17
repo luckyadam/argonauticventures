@@ -7,7 +7,9 @@
     </div>
     <div class="core_main" v-for="item in mainContent">
       <BlockText :content="item.blockTextContent" />
-
+      <div class="core_main_img_container">
+        <img class="core_main_img" v-lazy="item.img" />
+      </div>
     </div>
     <Copyright />
   </div>
