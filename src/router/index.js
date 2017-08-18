@@ -8,6 +8,7 @@ const Co = () => import('@/pages/Co.vue')
 const Contact = () => import('@/pages/Contact.vue')
 const CoreEthos = () => import('@/pages/CoreEthos.vue')
 const HfAsset = () => import('@/pages/HfAsset.vue')
+const Terms = () => import('@/pages/Terms.vue')
 
 Vue.use(Router)
 
@@ -47,6 +48,11 @@ export default new Router({
       path: '/hf-asset-class',
       name: 'HfAsset',
       component: HfAsset
+    },
+    {
+      path: '/terms-of-use',
+      name: 'Terms',
+      component: Terms
     }
   ]
 })

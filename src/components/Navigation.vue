@@ -59,6 +59,10 @@
           {
             name: 'contact us',
             lnk: 'contact'
+          },
+          {
+            name: 'terms of use',
+            lnk: 'terms-of-use'
           }
         ],
         open: false
@@ -89,7 +93,6 @@
         width: rem(8px);
         height: rem(8px);
         border-radius: 100%;
-        background-color: #000;
         display: block;
         position: absolute;
         left: 50%;
@@ -140,8 +143,30 @@
         color: #0079d7;
       }
     }
+    &.white {
+      .nav_btn {
+        background-color: #ffffff;
+        &_dot {
+          background-color: #000000;
+        }
+      }
+    }
+    &.black {
+      .nav_btn {
+        background-color: #000000;
+        &_dot {
+          background-color: #ffffff;
+        }
+      }
+    }
+    &.open {
+      .nav_btn {
+        background-color: #ffffff;
+        &_dot {
+          background-color: #000000;
+        }
+      }
+    }
   }
-  .nav.white .nav_btn {
-    background-color: #fff;
-  }
+
 </style>
