@@ -5,13 +5,13 @@
     <swiper class="asset_page_container" :options="swiperOption" :not-next-tick="notNextTick" ref="mySwiper">
       <swiper-slide class="asset_page asset_page_1">
         <div class="asset_main">
-          <Banner :content="assetContent1" class="asset_content" />
-          <Explore link="/hf-asset-class" />
+          <Banner :content="vcAssetContent" class="asset_content" />
+          <Explore link="/vc-asset-class" />
         </div>
       </swiper-slide>
       <swiper-slide class="asset_page asset_page_2">
         <div class="asset_main">
-          <Banner :content="assetContent2" class="asset_content" />
+          <Banner :content="hfAssetContent" class="asset_content" />
           <Explore link="/hf-asset-class" />
         </div>
       </swiper-slide>
@@ -49,13 +49,13 @@ export default {
         pagination: '.swiper-pagination',
         direction: 'vertical'
       },
-      assetContent1: {
-        bigTitle: ['venture capital'],
+      vcAssetContent: {
+        bigTitle: ['VENTURE CAPITAL'],
         smallTitle: ['ASSET  CLASS'],
         desc: 'Venture capital (VC) is a type of private equity,a form of financing that is provided by firms or funds to small, early-stage, emerging firms that are deemed to have high growth potential, or which have demonstrated high growth.'
       },
-      assetContent2: {
-        bigTitle: ['vhedge fund'],
+      hfAssetContent: {
+        bigTitle: ['HEDGE FUND'],
         smallTitle: ['ASSET  CLASS'],
         desc: 'A Hedge Fund is an investment fund that invests in a variety of assets, often with complex portfolio-construction and risk-management techniques. Hedge funds are generally distinct from mutual funds as their use of leverage is not capped by regulators and distinct from private equity funds as the majority of hedge funds invest in relatively liquid assets.'
       }

@@ -132,6 +132,15 @@ input[type="text"],textarea{
 		url('./assets/fonts/NexaRustSans-Black.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: BrushScriptStd;
+  src: url('./assets/fonts/BrushScriptStd.otf')
+}
+@font-face {
+  font-family: FFXEuropeanThin;
+  src: url('./assets/fonts/FFXEuropeanThin.ttf')
+}
+
 [lazy=loaded] {
   animation-duration: 1s;
   animation-fill-mode: both;

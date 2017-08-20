@@ -8,6 +8,7 @@ const Co = () => import('@/pages/Co.vue')
 const Contact = () => import('@/pages/Contact.vue')
 const CoreEthos = () => import('@/pages/CoreEthos.vue')
 const HfAsset = () => import('@/pages/HfAsset.vue')
+const VcAsset = () => import('@/pages/VcAsset.vue')
 const Terms = () => import('@/pages/Terms.vue')
 
 Vue.use(Router)
@@ -53,6 +54,11 @@ export default new Router({
       path: '/terms-of-use',
       name: 'Terms',
       component: Terms
+    },
+    {
+      path: '/vc-asset-class',
+      name: 'VcAsset',
+      component: VcAsset
     }
   ]
 })
