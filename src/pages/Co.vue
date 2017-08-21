@@ -6,7 +6,7 @@
       <Banner :content="coTopContent" class="co_top_main" />
     </div>
     <div class="co_main clearfix">
-      <a v-for="item in partners" :href="item.url" class="co_main_lk">
+      <a v-for="item in partners" :href="item.url" target="_blank" class="co_main_lk">
         <i class="co_main_ver"></i>
         <img v-lazy="item.img" class="co_main_img" >
       </a>
@@ -40,483 +40,383 @@
         partners: [
           {
             'img': require('../assets/img/partners/p001.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://a16z.com/'
           },
           {
             'img': require('../assets/img/partners/p002.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://arenavc.com/'
           },
           {
             'img': require('../assets/img/partners/p003.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://aspectventures.com/'
           },
           {
             'img': require('../assets/img/partners/p004.png'),
-            'url': '',
-            'name': ''
-          },
-          {
-            'img': require('../assets/img/partners/p005.png'),
-            'url': '',
-            'name': ''
-          },
-          {
-            'img': require('../assets/img/partners/p006.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://atxseedventures.com/'
           },
           {
             'img': require('../assets/img/partners/p007.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.airware.com/'
           },
           {
             'img': require('../assets/img/partners/p008.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://bluventureinvestors.com/'
           },
           {
             'img': require('../assets/img/partners/p009.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.boldcapitalpartners.com/'
           },
           {
             'img': require('../assets/img/partners/p010.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.brooklynbridge.vc/'
           },
           {
             'img': require('../assets/img/partners/p011.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://blumbergcapital.com/'
           },
           {
             'img': require('../assets/img/partners/p012.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://chaacventures.com/'
           },
           {
             'img': require('../assets/img/partners/p013.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.battery.com'
           },
           {
             'img': require('../assets/img/partners/p014.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://caffeinatedcapital.com/'
           },
           {
             'img': require('../assets/img/partners/p015.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://canaan.com/'
           },
           {
             'img': require('../assets/img/partners/p016.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://chaacventures.com/'
           },
           {
             'img': require('../assets/img/partners/p017.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.coriginventures.com/'
           },
           {
             'img': require('../assets/img/partners/p018.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://correlationvc.com/'
           },
           {
             'img': require('../assets/img/partners/p019.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.cultivationcapital.com'
           },
           {
             'img': require('../assets/img/partners/p020.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.viola-group.com/'
           },
           {
             'img': require('../assets/img/partners/p021.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.crosslinkcapital.com/'
           },
           {
             'img': require('../assets/img/partners/p022.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.dcm.com/'
           },
           {
             'img': require('../assets/img/partners/p023.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://dfj.com/'
           },
           {
             'img': require('../assets/img/partners/p024.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.dfjdragon.com'
           },
           {
             'img': require('../assets/img/partners/p025.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://drapernexus.com/'
           },
           {
             'img': require('../assets/img/partners/p026.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.dcvc.com'
           },
           {
             'img': require('../assets/img/partners/p027.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.eniac.com/'
           },
           {
             'img': require('../assets/img/partners/p028.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.felicis.com/'
           },
           {
             'img': require('../assets/img/partners/p029.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.foundercollective.com/'
           },
           {
             'img': require('../assets/img/partners/p030.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://foundersfund.com/'
           },
           {
             'img': require('../assets/img/partners/p031.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://fidelity.com/'
           },
           {
             'img': require('../assets/img/partners/p032.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://flywheelventures.com/'
           },
           {
             'img': require('../assets/img/partners/p033.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://formation8.com/'
           },
           {
             'img': require('../assets/img/partners/p034.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.glengaryllc.com'
           },
           {
             'img': require('../assets/img/partners/p035.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.greycroft.com/'
           },
           {
             'img': require('../assets/img/partners/p036.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.generalcatalyst.com/'
           },
           {
             'img': require('../assets/img/partners/p037.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.goldmansachs.com/'
           },
           {
             'img': require('../assets/img/partners/p038.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://hydeparkvp.com/'
           },
           {
             'img': require('../assets/img/partners/p039.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.harmonyvp.com/'
           },
           {
             'img': require('../assets/img/partners/p040.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.huronrivervc.com/'
           },
           {
             'img': require('../assets/img/partners/p041.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.indicatorventures.com'
           },
           {
             'img': require('../assets/img/partners/p042.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.innospringseedfund.com/'
           },
           {
             'img': require('../assets/img/partners/p043.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.iconiqcapital.com/'
           },
           {
             'img': require('../assets/img/partners/p044.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://indexventures.com/'
           },
           {
             'img': require('../assets/img/partners/p045.png'),
-            'url': '',
-            'name': ''
-          },
-          {
-            'img': require('../assets/img/partners/p046.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://ivp.com/'
           },
           {
             'img': require('../assets/img/partners/p047.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.khoslaventures.com/'
           },
           {
             'img': require('../assets/img/partners/p048.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.krillionventures.com'
           },
           {
             'img': require('../assets/img/partners/p049.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://kpcb.net/'
           },
           {
             'img': require('../assets/img/partners/p050.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.lererhippeau.com/'
           },
           {
             'img': require('../assets/img/partners/p051.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://lowercasecapital.com/'
           },
           {
             'img': require('../assets/img/partners/p052.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.lererhippeau.com/'
           },
           {
             'img': require('../assets/img/partners/p053.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.lsvp.com/'
           },
           {
             'img': require('../assets/img/partners/p054.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://matrixpartners.com/'
           },
           {
             'img': require('../assets/img/partners/p055.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://mercuryfund.com/'
           },
           {
             'img': require('../assets/img/partners/p056.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.middlelandcap.com/'
           },
           {
             'img': require('../assets/img/partners/p057.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://mithril.com/'
           },
           {
             'img': require('../assets/img/partners/p058.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.matrixpartners.com'
           },
           {
             'img': require('../assets/img/partners/p059.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://morganstanley.com/'
           },
           {
             'img': require('../assets/img/partners/p060.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.nextviewventures.com'
           },
           {
             'img': require('../assets/img/partners/p061.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://novavg.com/'
           },
           {
             'img': require('../assets/img/partners/p062.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.nea.com/'
           },
           {
             'img': require('../assets/img/partners/p063.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://newgencap.com/'
           },
           {
             'img': require('../assets/img/partners/p064.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.oakhcft.com'
           },
           {
             'img': require('../assets/img/partners/p065.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://pritzkergroup.com/'
           },
           {
             'img': require('../assets/img/partners/p066.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://pjc.vc/'
           },
           {
             'img': require('../assets/img/partners/p067.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://partechventures.com/'
           },
           {
             'img': require('../assets/img/partners/p068.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.precursorvc.com/'
           },
           {
             'img': require('../assets/img/partners/p069.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://preludeventures.com/'
           },
           {
             'img': require('../assets/img/partners/p070.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.pritzkergroup.com'
           },
           {
             'img': require('../assets/img/partners/p071.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://qedinvestors.com/'
           },
           {
             'img': require('../assets/img/partners/p072.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.redpoint.com/about/'
           },
           {
             'img': require('../assets/img/partners/p073.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.rivervest.com/'
           },
           {
             'img': require('../assets/img/partners/p074.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.romuluscap.com/'
           },
           {
             'img': require('../assets/img/partners/p075.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://route66ventures.com/'
           },
           {
             'img': require('../assets/img/partners/p076.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.sapphireventures.com'
+          },
+          {
+            'img': require('../assets/img/partners/p076-1.png'),
+            'url': 'https://www.sequoiacap.com/'
           },
           {
             'img': require('../assets/img/partners/p077.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://socialcapital.com/'
           },
           {
             'img': require('../assets/img/partners/p078.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://svangel.com/'
           },
           {
             'img': require('../assets/img/partners/p079.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://spectrum28.com/'
           },
           {
             'img': require('../assets/img/partners/p080.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.stormventures.com/'
           },
           {
             'img': require('../assets/img/partners/p081.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.tencent.com/'
           },
           {
             'img': require('../assets/img/partners/p082.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.tenoneten.com'
           },
           {
             'img': require('../assets/img/partners/p083.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://thrivecap.com/'
           },
           {
             'img': require('../assets/img/partners/p084.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://titan-partners.com/'
           },
           {
             'img': require('../assets/img/partners/p085.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.touchdownvc.com/'
           },
           {
             'img': require('../assets/img/partners/p086.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.tyltventures.com/'
           },
           {
             'img': require('../assets/img/partners/p087.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.techstars.com/'
           },
           {
             'img': require('../assets/img/partners/p088.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://upfront.com/'
+          },
+          {
+            'img': require('../assets/img/partners/p005.png'),
+            'url': 'http://valuestreamlabs.com/'
           },
           {
             'img': require('../assets/img/partners/p089.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://wiharper.com/'
           },
           {
             'img': require('../assets/img/partners/p090.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.wondervc.com/'
           },
           {
             'img': require('../assets/img/partners/p091.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://wrvcapital.com/mobile.php'
           },
           {
             'img': require('../assets/img/partners/p092.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://winklevosscapital.com/'
           },
           {
             'img': require('../assets/img/partners/p093.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.wellington.com/en'
           },
           {
             'img': require('../assets/img/partners/p094.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.ycombinator.com/'
           },
           {
             'img': require('../assets/img/partners/p095.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.zhenfund.com'
           },
           {
             'img': require('../assets/img/partners/p096.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://500.co/'
           }
         ]
       }

@@ -6,7 +6,7 @@
       <Banner :content="portfolioTopContent" class="portfolio_top_main" />
     </div>
     <div class="portfolio_main clearfix">
-      <a v-for="item in partners" :href="item.url" class="portfolio_main_lk">
+      <a v-for="item in partners" :href="item.url" target="_blank" class="portfolio_main_lk">
         <i class="portfolio_main_ver"></i>
         <img v-lazy="item.img" class="portfolio_main_img" >
       </a>
@@ -40,258 +40,207 @@
         partners: [
           {
             'img': require('../assets/img/portfolio/c001.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.crunchbase.com/organization/adfreeq#/entity'
           },
           {
             'img': require('../assets/img/portfolio/c002.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.amplehills.com/'
           },
           {
             'img': require('../assets/img/portfolio/c003.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://bensonhillbio.com/'
           },
           {
             'img': require('../assets/img/portfolio/c004.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.betterweekdays.com/'
           },
           {
             'img': require('../assets/img/portfolio/c005.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.bractlet.com/'
           },
           {
             'img': require('../assets/img/portfolio/c006.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.crazyforeducation.com/'
           },
           {
             'img': require('../assets/img/portfolio/c007.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.comparaguru.com/'
           },
           {
             'img': require('../assets/img/portfolio/c008.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://cruncher.ai/'
           },
           {
             'img': require('../assets/img/portfolio/c009.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://cohealo.com/'
           },
           {
             'img': require('../assets/img/portfolio/c010.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.essinc.com'
           },
           {
             'img': require('../assets/img/portfolio/c011.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.epharmix.com/'
           },
           {
             'img': require('../assets/img/portfolio/c012.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.euclises.com/'
           },
           {
             'img': require('../assets/img/portfolio/c013.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.fairwords.co/'
           },
           {
             'img': require('../assets/img/portfolio/c014.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.forelight.com/'
           },
           {
             'img': require('../assets/img/portfolio/c015.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.flexreceipts.com/'
           },
           {
             'img': require('../assets/img/portfolio/c017.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.gremlinsocial.com'
           },
           {
             'img': require('../assets/img/portfolio/c018.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.hatchbuck.com/'
           },
           {
             'img': require('../assets/img/portfolio/c019.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.holganix.com/'
           },
           {
             'img': require('../assets/img/portfolio/c020.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.humi.ca/'
           },
           {
             'img': require('../assets/img/portfolio/c021.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.immunophotonics.com/'
           },
           {
             'img': require('../assets/img/portfolio/c022.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.crunchbase.com/product/indalo#/entity'
           },
           {
             'img': require('../assets/img/portfolio/c023.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.iopipe.com/'
           },
           {
             'img': require('../assets/img/portfolio/c024.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.inspiredme.com/'
           },
           {
             'img': require('../assets/img/portfolio/c025.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.crunchbase.com/organization/jumpcut-studios#/entity'
           },
           {
             'img': require('../assets/img/portfolio/c026.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.joymode.com/'
           },
           {
             'img': require('../assets/img/portfolio/c027.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://kultevat.com/'
           },
           {
             'img': require('../assets/img/portfolio/c028.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.lendingfront.com/'
           },
           {
             'img': require('../assets/img/portfolio/c029.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://liquiglide.com/'
           },
           {
             'img': require('../assets/img/portfolio/c030.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://neurosmedical.com/'
           },
           {
             'img': require('../assets/img/portfolio/c031.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.nutanix.com/'
           },
           {
             'img': require('../assets/img/portfolio/c033.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.popbookings.com/'
           },
           {
             'img': require('../assets/img/portfolio/c034.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://proteosense.com/'
           },
           {
             'img': require('../assets/img/portfolio/c035.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://payforward.com/'
           },
           {
             'img': require('../assets/img/portfolio/c036.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://postmates.com/'
           },
           {
             'img': require('../assets/img/portfolio/c037.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://getquilt.com'
           },
           {
             'img': require('../assets/img/portfolio/c038.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://rebound-tech.com/'
           },
           {
             'img': require('../assets/img/portfolio/c039.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.raptormaps.com/'
           },
           {
             'img': require('../assets/img/portfolio/c040.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.streamlinksoftware.com'
           },
           {
             'img': require('../assets/img/portfolio/c041.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.letskedaddle.com/'
           },
           {
             'img': require('../assets/img/portfolio/c042.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.scratchpay.com/'
           },
           {
             'img': require('../assets/img/portfolio/c043.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.tansna.com/'
           },
           {
             'img': require('../assets/img/portfolio/c044.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.TimeToCater.com'
           },
           {
             'img': require('../assets/img/portfolio/c045.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.crunchbase.com/organization/hellotwist#/entity'
           },
           {
             'img': require('../assets/img/portfolio/c046.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.tachyus.com/'
           },
           {
             'img': require('../assets/img/portfolio/c047.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://tribogenics.com/'
           },
           {
             'img': require('../assets/img/portfolio/c048.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.crunchbase.com/organization/the-honest-company#/entity'
           },
           {
             'img': require('../assets/img/portfolio/c049.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.vendigo.com/en/'
           },
           {
             'img': require('../assets/img/portfolio/c050.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://wunder.org/'
           },
           {
             'img': require('../assets/img/portfolio/c051.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://www.zenprospect.com/'
           },
           {
             'img': require('../assets/img/portfolio/c052.png'),
-            'url': '',
-            'name': ''
+            'url': 'http://www.zincplatform.com/'
           },
           {
             'img': require('../assets/img/portfolio/c053.png'),
-            'url': '',
-            'name': ''
+            'url': 'https://zerocater.com/'
           }
         ]
       }
