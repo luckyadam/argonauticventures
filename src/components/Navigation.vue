@@ -50,7 +50,7 @@
           },
           {
             name: 'portfolio companies',
-            lnk: 'portfolio'
+            lnk: 'portfolio-companies'
           },
           {
             name: 'news',

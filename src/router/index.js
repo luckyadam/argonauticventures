@@ -10,6 +10,7 @@ const CoreEthos = () => import('@/pages/CoreEthos.vue')
 const HfAsset = () => import('@/pages/HfAsset.vue')
 const VcAsset = () => import('@/pages/VcAsset.vue')
 const Terms = () => import('@/pages/Terms.vue')
+const PortfolioCompanies = () => import('@/pages/PortfolioCompanies.vue')
 
 Vue.use(Router)
 
@@ -59,6 +60,11 @@ export default new Router({
       path: '/vc-asset-class',
       name: 'VcAsset',
       component: VcAsset
+    },
+    {
+      path: '/portfolio-companies',
+      name: 'PortfolioCompanies',
+      component: PortfolioCompanies
     }
   ]
 })

@@ -60,6 +60,7 @@
       }
       &_s {
         font-family: RegencieLight;
+        font-weight: 300;
         line-height: 1;
         margin-bottom: rem(30px);
       }
