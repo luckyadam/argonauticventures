@@ -5,18 +5,19 @@ import App from './App'
 import router from './router'
 import VueLazyload from 'vue-lazyload'
 import VueTap from 'v-tap'
-// import vueg from 'vueg'
-// import 'vueg/css/transition-min.css'
+import VuePaginate from 'vue-paginate'
+
+import * as filters from './filters'
 
 Vue.config.productionTip = false
 
 Vue.use(VueTap)
-// Vue.use(vueg, router, {
-//   forwardAnim: 'fadeInRight',
-//   backAnim: 'fadeInLeft',
-//   shadow: false
-// })
 Vue.use(VueLazyload)
+Vue.use(VuePaginate)
+
+Object.keys(filters).forEach((key) => {
+  Vue.filter(key, filters[key])
+})
 
 const app = new Vue({
   el: '#app',

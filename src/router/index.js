@@ -11,6 +11,7 @@ const HfAsset = () => import('@/pages/HfAsset.vue')
 const VcAsset = () => import('@/pages/VcAsset.vue')
 const Terms = () => import('@/pages/Terms.vue')
 const PortfolioCompanies = () => import('@/pages/PortfolioCompanies.vue')
+const News = () => import('@/pages/News.vue')
 
 Vue.use(Router)
 
@@ -65,6 +66,11 @@ export default new Router({
       path: '/portfolio-companies',
       name: 'PortfolioCompanies',
       component: PortfolioCompanies
+    },
+    {
+      path: '/news',
+      name: 'News',
+      component: News
     }
   ]
 })
