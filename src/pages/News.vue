@@ -261,6 +261,9 @@ export default {
             a {
               color: #383637;
             }
+            a:hover,a:active,a:focus {
+              color: #0079d7;
+            }
           }
           &_date {
             font-size: 9px;

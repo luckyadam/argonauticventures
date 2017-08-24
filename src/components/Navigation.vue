@@ -4,18 +4,24 @@
       <i class="nav_btn_dot nav_btn_dot_1"></i>
       <i class="nav_btn_dot nav_btn_dot_2"></i>
       <i class="nav_btn_dot nav_btn_dot_3"></i>
-      <i class="nav_btn_dot nav_btn_dot_4" v-show="open"></i>
-      <i class="nav_btn_dot nav_btn_dot_5" v-show="open"></i>
+      <transition name="fade">
+        <i class="nav_btn_dot nav_btn_dot_4" v-show="open"></i>
+      </transition>
+      <transition name="fade">
+        <i class="nav_btn_dot nav_btn_dot_5" v-show="open"></i>
+      </transition>
     </div>
-    <div class="nav_list" v-if="open">
-      <ul>
-        <li v-for="item in navList" class="nav_item">
-          <router-link :to="item.lnk" active-class="active" class="nav_lnk">
-            {{item.name}}
-          </router-link>
-        </li>
-      </ul>
-    </div>
+    <transition name="slide-fade">
+      <div class="nav_list" v-if="open">
+        <ul>
+          <li v-for="item in navList" class="nav_item">
+            <router-link :to="item.lnk" active-class="active" class="nav_lnk">
+              {{item.name}}
+            </router-link>
+          </li>
+        </ul>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -84,7 +90,7 @@
       position: absolute;
       width: rem(75px);
       height: rem(75px);
-      border-radius: 100%;
+      border-radius: 50%;
       top: rem(30px);
       right: rem(40px);
       text-align: center;
@@ -92,7 +98,7 @@
       &_dot {
         width: rem(8px);
         height: rem(8px);
-        border-radius: 100%;
+        border-radius: 50%;
         display: block;
         position: absolute;
         left: 50%;
@@ -168,5 +174,20 @@
       }
     }
   }
-
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0
+  }
+  .slide-fade-enter-active {
+    transition: all .3s ease;
+  }
+  .slide-fade-leave-active {
+    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  }
+  .slide-fade-enter, .slide-fade-leave-to {
+    transform: translateX(12px);
+    opacity: 0;
+  }
 </style>
