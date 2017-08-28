@@ -15,7 +15,7 @@
       <div class="nav_list" v-if="open">
         <ul>
           <li v-for="item in navList" class="nav_item">
-            <router-link :to="item.lnk" active-class="active" class="nav_lnk">
+            <router-link :to="item.lnk" active-class="active" class="nav_lnk" @click.native="onNavItemClick">
               {{item.name}}
             </router-link>
           </li>
@@ -77,6 +77,9 @@
     methods: {
       togglenav () {
         this.open = !this.open
+      },
+      onNavItemClick () {
+        this.open = false
       }
     }
   }
