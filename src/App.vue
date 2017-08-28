@@ -1,7 +1,7 @@
 <template>
-  <div id="app" class="app">
+  <div id="app" :class="['app', loading ? 'app_loading' : '']">
     <router-view class="container"></router-view>
-    <Loading v-if="$root.loading" />
+    <Loading v-if="loading" />
   </div>
 </template>
 
@@ -11,6 +11,11 @@ export default {
   name: 'app',
   components: {
     Loading
+  },
+  computed: {
+    loading () {
+      return this.$root.loading
+    }
   }
 }
 </script>
@@ -158,6 +163,10 @@ input[type="text"],textarea{
 
 html, body, .app, .container {
   width: 100%;
+  height: 100%;
+}
+.app_loading {
+  overflow: hidden;
 }
 
 </style>

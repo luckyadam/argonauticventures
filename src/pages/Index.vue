@@ -1,5 +1,11 @@
 <template>
   <div class="index" :style="{ height: this.winSize.height + 'px' }">
+    <div style="display: none;">
+      <span style="font-family: RegencieLight">1</span>
+      <span style="font-family: NexaRustSans-Black">1</span>
+      <span style="font-family: BrushScriptStd">1</span>
+      <span style="font-family: FFXEuropeanThin">1</span>
+    </div>
     <Navigation type="white" />
     <div v-for="(item, index) in carouselData" :class="['index_page', `index_page_${item.type}`]" :style="{ opacity: currentIndex === index ? 1 : 0, zIndex: currentIndex === index ? 5 : 1 }">
       <div class="index_page_mask"></div>
