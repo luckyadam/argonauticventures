@@ -1,5 +1,6 @@
 <template>
   <div class="co">
+    <PageLogo />
     <Navigation type="white" />
     <div class="co_top" :style="{ height: this.winSize.height + 'px' }">
       <div class="co_top_mask"></div>
@@ -18,12 +19,14 @@
 <script>
   import mixin from '@/mixins'
   import Navigation from '@/components/Navigation'
+  import PageLogo from '@/components/PageLogo'
   import Banner from '@/components/Banner'
   import Copyright from '@/components/Copyright'
 
   export default {
     components: {
       Navigation,
+      PageLogo,
       Banner,
       Copyright
     },

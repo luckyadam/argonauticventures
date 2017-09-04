@@ -1,5 +1,6 @@
 <template>
   <div class="vc">
+    <PageLogo />
     <Navigation type="white" />
     <div class="vc_top" :style="{ height: this.winSize.height + 'px' }">
       <div class="vc_top_mask"></div>
@@ -93,6 +94,7 @@
 <script>
 import mixin from '@/mixins'
 import Navigation from '@/components/Navigation'
+import PageLogo from '@/components/PageLogo'
 import Banner from '@/components/Banner'
 import BlockText from '@/components/BlockText'
 import Copyright from '@/components/Copyright'
@@ -100,6 +102,7 @@ import Copyright from '@/components/Copyright'
 export default {
   components: {
     Navigation,
+    PageLogo,
     Banner,
     BlockText,
     Copyright

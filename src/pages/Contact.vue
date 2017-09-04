@@ -1,5 +1,6 @@
 <template>
   <div class="contact" :style="{ height: this.winSize.height + 'px' }">
+    <PageLogo />
     <Navigation type="white" />
     <div class="contact_mask"></div>
     <div class="contact_main">
@@ -11,11 +12,13 @@
 <script>
 import mixin from '@/mixins'
 import Navigation from '@/components/Navigation'
+import PageLogo from '@/components/PageLogo'
 import Banner from '@/components/Banner'
 
 export default {
   components: {
     Navigation,
+    PageLogo,
     Banner
   },
 

@@ -1,5 +1,6 @@
 <template>
   <div class="terms">
+    <PageLogo />
     <Navigation type="black" />
     <div class="terms_top">
       <p class="terms_top_title">argonautic</p>
@@ -17,12 +18,14 @@
 
 <script>
 import Navigation from '@/components/Navigation'
+import PageLogo from '@/components/PageLogo'
 import BlockText from '@/components/BlockText'
 import Copyright from '@/components/Copyright'
 
 export default {
   components: {
     Navigation,
+    PageLogo,
     BlockText,
     Copyright
   },

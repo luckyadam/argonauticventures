@@ -6,6 +6,7 @@
       <span style="font-family: BrushScriptStd">1</span>
       <span style="font-family: FFXEuropeanThin">1</span>
     </div>
+    <PageLogo />
     <Navigation type="white" />
     <div v-for="(item, index) in carouselData" :class="['index_page', `index_page_${item.type}`]" :style="{ opacity: currentIndex === index ? 1 : 0, zIndex: currentIndex === index ? 5 : 1 }">
       <div class="index_page_mask"></div>
@@ -22,10 +23,12 @@
 <script>
 import mixin from '@/mixins'
 import Navigation from '@/components/Navigation'
+import PageLogo from '@/components/PageLogo'
 
 export default {
   components: {
-    Navigation
+    Navigation,
+    PageLogo
   },
   mixins: [mixin],
   data () {

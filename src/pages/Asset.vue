@@ -1,5 +1,6 @@
 <template>
   <div class="asset" :style="{ height: this.winSize.height + 'px' }">
+    <PageLogo />
     <Navigation type="white" />
     <div class="asset_mask"></div>
     <swiper class="asset_page_container" :options="swiperOption" :not-next-tick="notNextTick" ref="mySwiper">
@@ -27,12 +28,14 @@ import { swiper, swiperSlide } from 'vue-awesome-swiper'
 
 import mixin from '@/mixins'
 import Navigation from '@/components/Navigation'
+import PageLogo from '@/components/PageLogo'
 import Banner from '@/components/Banner'
 import Explore from '@/components/Explore'
 
 export default {
   components: {
     Navigation,
+    PageLogo,
     Banner,
     Explore,
 

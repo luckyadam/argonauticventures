@@ -1,5 +1,6 @@
 <template>
   <div class="news">
+    <PageLogo />
     <Navigation type="white" />
     <div class="news_top" :style="{ height: this.winSize.height + 'px' }">
       <div class="news_top_mask"></div>
@@ -36,6 +37,7 @@ import jsonp from 'jsonp'
 
 import mixin from '@/mixins'
 import Navigation from '@/components/Navigation'
+import PageLogo from '@/components/PageLogo'
 import Banner from '@/components/Banner'
 import BlockText from '@/components/BlockText'
 import Copyright from '@/components/Copyright'
@@ -53,6 +55,7 @@ function chunk (array, size) {
 export default {
   components: {
     Navigation,
+    PageLogo,
     Banner,
     BlockText,
     Copyright
