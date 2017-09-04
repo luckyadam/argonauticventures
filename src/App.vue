@@ -1,5 +1,12 @@
 <template>
   <div id="app" :class="['app', loading ? 'app_loading' : '']">
+    <div style="display: none;">
+      <span style="font-family: RegencieLight">1</span>
+      <span style="font-family: NexaRustSans-Black">1</span>
+      <span style="font-family: BrushScriptStd">1</span>
+      <span style="font-family: FFXEuropeanThin">1</span>
+      <span style="font-family: corbelb">1</span>
+    </div>
     <router-view class="container"></router-view>
     <Loading v-if="loading" />
   </div>
@@ -139,11 +146,26 @@ input[type="text"],textarea{
 
 @font-face {
   font-family: BrushScriptStd;
-  src: url('./assets/fonts/BrushScriptStd.otf')
+  src: url('./assets/fonts/BrushScriptStd.otf');
+  font-weight: normal;
+	font-style: normal;
 }
 @font-face {
   font-family: FFXEuropeanThin;
-  src: url('./assets/fonts/FFXEuropeanThin.ttf')
+  src: url('./assets/fonts/FFXEuropeanThin.ttf');
+  font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: corbelb;
+  src: url('./assets/fonts/corbelb.ttf');
+  src:
+    url('./assets/fonts/corbelb.eot?#font-spider') format('embedded-opentype'),
+		url('./assets/fonts/corbelb.woff') format('woff'),
+		url('./assets/fonts/corbelb.ttf') format('truetype');
+  font-weight: normal;
+	font-style: normal;
 }
 
 [lazy=loaded] {

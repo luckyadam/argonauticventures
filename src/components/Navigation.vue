@@ -140,13 +140,13 @@
     &_item {
       text-align: right;
       line-height: 1;
-      margin-bottom: rem(56px);
+      margin-bottom: rem(50px);
       padding-right: rem(40px);
     }
     &_lnk {
       color: #fff;
       font-size: 24px;
-      font-family: NexaRustSans-Black;
+      font-family: corbelb;
       text-transform: uppercase;
       &.router-link-exact-active {
         color: #0079d7;
