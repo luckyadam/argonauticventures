@@ -105,7 +105,7 @@ export default {
     &_top {
       position: relative;
       width: 100%;
-      background: url(../assets/img/hf.jpg) 0 0 no-repeat;
+      background: url(../assets/img/hf_ac.jpg) 0 0 no-repeat;
       background-size: cover;
       &_mask {
         width:  100%;

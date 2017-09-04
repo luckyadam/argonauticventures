@@ -193,7 +193,7 @@ export default {
     &_top {
       position: relative;
       width: 100%;
-      background: url(../assets/img/core.jpg) 0 0 no-repeat;
+      background: url(../assets/img/news.jpg) 0 0 no-repeat;
       background-size: cover;
       &_mask {
         width:  100%;
@@ -201,7 +201,7 @@ export default {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, .8);
+        background-color: rgba(0, 0, 0, .3);
       }
       &_main {
         left: 0;
