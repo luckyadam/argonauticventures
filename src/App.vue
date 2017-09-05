@@ -1,11 +1,11 @@
 <template>
   <div id="app" :class="['app', loading ? 'app_loading' : '']">
-    <div style="display: none;">
-      <span style="font-family: RegencieLight">1</span>
-      <span style="font-family: NexaRustSans-Black">1</span>
-      <span style="font-family: BrushScriptStd">1</span>
-      <span style="font-family: FFXEuropeanThin">1</span>
-      <span style="font-family: corbelb">1</span>
+    <div style="width: 0;height: 0;">
+      <span style="font-family: RegencieLight; font-size: 0;">1</span>
+      <span style="font-family: NexaRustSans-Black; font-size: 0;">1</span>
+      <span style="font-family: BrushScriptStd; font-size: 0;">1</span>
+      <span style="font-family: FFXEuropeanThin; font-size: 0;">1</span>
+      <span style="font-family: corbelb; font-size: 0;">1</span>
     </div>
     <router-view class="container"></router-view>
     <Loading v-if="loading" />
