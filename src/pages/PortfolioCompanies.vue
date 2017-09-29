@@ -37,7 +37,7 @@
       return {
         portfolioTopContent: {
           bigTitle: ['PORTFOLIO COMPANIES'],
-          smallTitle: ['OF  OUR', 'PARTNERS']
+          smallTitle: ['OF  OUR', 'FUNDS']
         },
 
         partners: [
